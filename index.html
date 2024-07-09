@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
-    <title>Online Enagagement Service</title>
+    <title>Circle | Online Enagagement Service</title>
+
     <!-- Font Awesome cdn -->
     <link
       rel="stylesheet"
@@ -19,12 +20,12 @@
       type="text/css"
     />
   </head>
-  <body>
+  <body id="home">
     <!-- 
             Navbar 
     -->
     <header
-      class="sticky top-0 z-10 left-0 right-0 bg-white shadow border-b-sky-500 border-2"
+      class="sticky top-0 z-10 left-0 right-0 bg-white shadow border-b-teal-500 border-2"
     >
       <nav>
         <div class="navbar max-w-7xl mx-auto">
@@ -50,29 +51,54 @@
                 tabindex="0"
                 class="menu menu-sm !capitalize dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li>features</li>
-                <li>pricing</li>
-                <li>testmonial</li>
-                <li>resources</li>
-                <li>company</li>
-                <li>contact</li>
+                <li>
+                  <a href="#award">award</a>
+                </li>
+                <li>
+                  <a href="#feedback">feedback</a>
+                </li>
+                <li>
+                  <a href="#resources">resources</a>
+                </li>
+                <li>
+                  <a href="#research">research</a>
+                </li>
               </ul>
             </div>
             <img src="./images/logo.png" alt="" />
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="flex gap-4 capitalize cursor-pointer">
-              <li>features</li>
-              <li>pricing</li>
-              <li>testmonial</li>
-              <li>resources</li>
-              <li>company</li>
-              <li>contact</li>
+              <li
+                class="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
+                <a href="#home">Home</a>
+              </li>
+              <li
+                class="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
+                <a href="#award">award</a>
+              </li>
+              <li
+                class="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
+                <a href="#feedback">feedback</a>
+              </li>
+              <li
+                class="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
+                <a href="#resources">resources</a>
+              </li>
+              <li
+                class="relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
+                <a href="#research">research</a>
+              </li>
             </ul>
           </div>
           <div class="navbar-end">
             <a
-              class="px-8 py-1 border-sky-400 rounded border-2 font-semibold !text-sky-400 text-xl capitalize"
+              class="px-8 py-1 border-teal-400 rounded border-2 font-semibold !text-teal-400 text-xl capitalize hover:bg-teal-500 hover:!text-white cursor-pointer transition-colors duration-300"
               >login</a
             >
           </div>
@@ -87,7 +113,7 @@
             Hero Section 
     -->
       <section
-        class="min-h-[calc(100vh-68px)] bg-sky-100 bg-[url('./images/bg-image.png')] relative bg-center bg-cover bg-no-repeat flex justify-center items-center px-2"
+        class="min-h-[calc(100vh-68px)] bg-teal-100 bg-[url('./images/bg-image.png')] relative bg-center bg-cover bg-no-repeat flex justify-center items-center px-2"
       >
         <div class="max-w-4xl flex flex-col items-center gap-5">
           <h1
@@ -127,18 +153,21 @@
       <!-- 
             Award Section 
     -->
-      <section class="py-10 md:pt-52 text-center space-y-4 max-w-7xl mx-auto">
+      <section
+        id="award"
+        class="py-28 md:pt-40 text-center space-y-4 max-w-7xl mx-auto"
+      >
         <!-- badge -->
         <span
-          class="uppercase inline-block p-1 px-4 bg-sky-50 text-sky-300 rounded-full font-semibold text-sm"
+          class="uppercase inline-block p-1 px-4 bg-teal-50 text-teal-300 rounded-full font-semibold text-sm"
           >awards</span
         >
         <!-- title -->
         <p class="text-xl md:text-2xl">
           An
-          <span class="font-semibold text-sky-600">award winning </span
+          <span class="font-semibold text-teal-600">award winning </span
           >platform,
-          <span class="font-semibold text-sky-600">loved by </span>
+          <span class="font-semibold text-teal-600">loved by </span>
           customers.
         </p>
         <!-- awards card -->
@@ -147,7 +176,7 @@
         >
           <!-- ! card - 1 -->
           <div
-            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFF5F3] hover:drop-shadow-xl transition-all duration-300 cursor-pointer"
+            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFF5F3] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer"
           >
             <img class="h-28" src="./images/awards/awards-1.png" alt="" />
             <p class="font-bold">
@@ -156,47 +185,47 @@
           </div>
           <!-- ! card - 2 -->
           <div
-            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFF0F9] hover:drop-shadow-xl transition-all duration-300 cursor-pointer"
+            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFF0F9] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer"
           >
             <img class="h-28" src="./images/awards/awards-2.png" alt="" />
             <p class="font-bold">
-              Market leader across <span class="block">18 categories</span>
+              Most loved SaaS tool <span class="block">in 2021</span>
             </p>
           </div>
           <!-- ! card - 3 -->
           <div
-            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#ECFFFF] hover:drop-shadow-xl transition-all duration-300 cursor-pointer"
+            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#ECFFFF] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer"
           >
             <img class="h-28" src="./images/awards/awards-3.png" alt="" />
             <p class="font-bold">
-              Market leader across <span class="block">18 categories</span>
+              Category leader in <span class="block">2022</span>
             </p>
           </div>
           <!-- ! card - 4 -->
           <div
-            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#F6F4FF] hover:drop-shadow-xl transition-all duration-300 cursor-pointer"
+            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#F6F4FF] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer"
           >
             <img class="h-28" src="./images/awards/awards-4.png" alt="" />
             <p class="font-bold">
-              Market leader across <span class="block">18 categories</span>
+              Most recommended <span class="block">tool in 2021</span>
             </p>
           </div>
           <!-- ! card - 5 -->
           <div
-            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFF9E7] hover:drop-shadow-xl transition-all duration-300 cursor-pointer"
+            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFF9E7] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer"
           >
             <img class="h-28" src="./images/awards/awards-5.png" alt="" />
             <p class="font-bold">
-              Market leader across <span class="block">18 categories</span>
+              Champion in survey <span class="block">tool 2022</span>
             </p>
           </div>
           <!-- ! card - 6 -->
           <div
-            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFEDE4] hover:drop-shadow-xl transition-all duration-300 cursor-pointer"
+            class="py-14 min-w-full min-h-80 grid place-items-center space-y-0 bg-[#FFEDE4] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer"
           >
             <img class="h-28" src="./images/awards/awards-6.png" alt="" />
             <p class="font-bold">
-              Market leader across <span class="block">18 categories</span>
+              Top performer spring <span class="block">2021</span>
             </p>
           </div>
         </div>
@@ -204,9 +233,12 @@
       <!-- 
             feedback Section 
     -->
-      <section class="bg-[#EDFEFF] h-fit text-center py-4 space-y-10">
+      <section
+        id="feedback"
+        class="bg-[#EDFEFF] h-fit text-center py-28 space-y-10"
+      >
         <span
-          class="uppercase inline-block p-1 px-4 bg-white text-sky-300 rounded-full font-semibold text-sm"
+          class="uppercase inline-block p-1 px-4 bg-white text-teal-300 rounded-full font-semibold text-sm"
           >feedback</span
         >
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-5 px-4">
@@ -241,16 +273,19 @@
       <!-- 
             resources Section 
     -->
-      <section class="py-10 text-center space-y-4 max-w-7xl mx-auto">
+      <section
+        id="resources"
+        class="py-28 text-center space-y-4 max-w-7xl mx-auto"
+      >
         <!-- badge -->
         <span
-          class="uppercase inline-block p-1 px-4 bg-sky-50 text-sky-300 rounded-full font-semibold text-sm"
+          class="uppercase inline-block p-1 px-4 bg-teal-50 text-teal-300 rounded-full font-semibold text-sm"
           >resources</span
         >
         <!-- title -->
         <p class="text-xl md:text-2xl">
-          <span class="font-semibold text-sky-600">Stay</span> in the
-          <span class="font-semibold text-sky-600">know.</span>
+          <span class="font-semibold text-teal-600">Stay</span> in the
+          <span class="font-semibold text-teal-600">know.</span>
         </p>
         <!-- awards card -->
         <div
@@ -258,7 +293,7 @@
         >
           <!-- ! card - 1 -->
           <div
-            class="min-h-80 text-left space-y-5 bg-[#93ccef1f] hover:drop-shadow-xl transition-all duration-300 cursor-pointer p-4"
+            class="min-h-80 text-left space-y-5 bg-[#93ccef1f] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer p-4"
           >
             <img
               class="h-40 w-full"
@@ -281,7 +316,7 @@
           </div>
           <!-- ! card - 2 -->
           <div
-            class="min-h-80 text-left space-y-5 bg-[#ed71711f] hover:drop-shadow-xl transition-all duration-300 cursor-pointer p-4"
+            class="min-h-80 text-left space-y-5 bg-[#ed71711f] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer p-4"
           >
             <img
               class="h-40 w-full"
@@ -305,7 +340,7 @@
           </div>
           <!-- ! card - 3 -->
           <div
-            class="min-h-80 text-left space-y-5 bg-[#49f3f01f] hover:drop-shadow-xl transition-all duration-300 cursor-pointer p-4"
+            class="min-h-80 text-left space-y-5 bg-[#49f3f01f] hover:drop-shadow-xl transition-all ease-in-out duration-300 cursor-pointer p-4"
           >
             <img
               class="h-40 w-full"
@@ -333,15 +368,18 @@
       <!-- 
             research Section 
     -->
-      <section class="bg-[#EDFEFF] h-fit text-center py-4 space-y-10">
+      <section
+        id="research"
+        class="bg-[#EDFEFF] h-fit text-center py-28 space-y-10"
+      >
         <span
-          class="uppercase inline-block p-1 px-4 bg-white text-sky-300 rounded-full font-semibold text-sm"
+          class="uppercase inline-block p-1 px-4 bg-white text-teal-300 rounded-full font-semibold text-sm"
           >built for people</span
         >
         <!-- title -->
         <p class="text-xl md:text-2xl">
-          <span class="font-semibold text-sky-600">Easy</span> for beginners.
-          <span class="font-semibold text-sky-600">Powerful </span>
+          <span class="font-semibold text-teal-600">Easy</span> for beginners.
+          <span class="font-semibold text-teal-600">Powerful </span>
           for experts.
         </p>
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-5 px-4">
@@ -366,5 +404,23 @@
         </div>
       </section>
     </main>
+    <footer class="bg-gray-800 text-gray-200 text-sm py-5">
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap justify-between items-center px-4"
+      >
+        <span> Copyright &copy; 2024 Circle. All rights reserved. </span>
+        <div class="space-x-2">
+          <i
+            class="fa-brands fa-linkedin-in cursor-pointer hover:scale-150 transition-transform duration-300 fa-lg"
+          ></i>
+          <i
+            class="fa-brands fa-twitter cursor-pointer hover:scale-150 transition-transform duration-300 fa-lg"
+          ></i>
+          <i
+            class="fa-brands fa-youtube cursor-pointer hover:scale-150 transition-transform duration-300 fa-lg"
+          ></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
